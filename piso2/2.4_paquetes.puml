@@ -1,0 +1,12 @@
+@startuml
+package logicaJuego {
+  class GestorCampana
+  class CalculadoraDanio
+}
+
+package baseDatos {
+  class RepositorioPersonajes
+}
+
+logicaJuego ..> baseDatos : <<depende>>
+@enduml
