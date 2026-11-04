@@ -1,0 +1,7 @@
+@startuml
+start
+:Explorar mazmorra;
+:Encontrar cofre;
+:Abrir cofre;
+stop
+@enduml
