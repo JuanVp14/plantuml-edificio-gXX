@@ -1,0 +1,4 @@
+@startuml
+Jugador -right-> Servidor : "Conecta a"
+Servidor -left-> BaseDatos : "Consulta"
+@enduml
