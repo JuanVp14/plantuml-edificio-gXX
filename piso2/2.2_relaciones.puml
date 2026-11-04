@@ -1,0 +1,8 @@
+@startuml
+class CuentaUsuario
+class Personaje
+class Gremio
+
+CuentaUsuario *-- Personaje
+Gremio o-- Personaje
+@enduml
