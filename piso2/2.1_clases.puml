@@ -1,0 +1,9 @@
+@startuml
+class Arma {
+  - idObjeto : int
+  - nombre : String
+  - multiplicadorDano : float
+  + equipar(p : Personaje)
+  + reparar() : void
+}
+@enduml
