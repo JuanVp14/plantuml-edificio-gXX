@@ -1,0 +1,5 @@
+@startuml
+actor Jugador
+usecase "Iniciar partida RPG" as UC1
+Jugador --> UC1
+@enduml
