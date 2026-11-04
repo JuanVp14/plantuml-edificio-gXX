@@ -1,0 +1,15 @@
+@startuml
+|Jugador|
+start
+:Intentar robar a NPC;
+|Game Master|
+:Lanzar dados de sigilo;
+if (¿Éxito?) then (sí)
+  |Jugador|
+  :Obtener ítem del NPC;
+else (no)
+  |Game Master|
+  :Alertar a la guardia de la ciudad;
+endif
+stop
+@enduml
