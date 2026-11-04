@@ -1,0 +1,11 @@
+@startuml
+object "jugador1 : CuentaUsuario" as c {
+  username = "juanpablo"
+  estado = "Activo"
+}
+object "magoOscuro : Personaje" as p {
+  nombre = "Merlín"
+  nivel = 15
+}
+c --> p : "creó a"
+@enduml
