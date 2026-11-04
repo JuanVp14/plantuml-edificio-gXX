@@ -1,0 +1,10 @@
+@startuml
+actor GameMaster
+participant "Panel RPG" as Panel
+participant Personaje
+
+GameMaster -> Panel : otorgarExperiencia(100)
+Panel -> Personaje : sumarExp(100)
+Personaje --> Panel : nivelActualizado = true
+Panel --> GameMaster : "Notificación: Nivel 2 alcanzado"
+@enduml
