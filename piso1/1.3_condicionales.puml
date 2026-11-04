@@ -1,0 +1,10 @@
+@startuml
+start
+:Intentar abrir cerradura;
+if (¿Tiene ganzúa?) then (sí)
+  :Cofre abierto;
+else (no)
+  :Activar trampa;
+endif
+stop
+@enduml
