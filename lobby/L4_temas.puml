@@ -1,0 +1,7 @@
+Fragmento de código
+@startuml
+theme blueprint
+class Mago {
+  + lanzarHechizo()
+}
+@enduml
