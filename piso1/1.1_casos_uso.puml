@@ -1,0 +1,6 @@
+@startuml
+left to right direction
+actor "Game Master" as GM
+GM --> (Crear Campaña)
+GM --> (Asignar Experiencia)
+@enduml
