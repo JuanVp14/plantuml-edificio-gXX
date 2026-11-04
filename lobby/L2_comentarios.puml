@@ -1,0 +1,5 @@
+@startuml
+' Representa al administrador del juego
+actor "Game Master" as GM
+note right of GM : Controla la partida
+@enduml
