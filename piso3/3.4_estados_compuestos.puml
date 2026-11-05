@@ -1,0 +1,12 @@
+@startuml
+[*] --> ExplorandoMundo
+
+state "En Menú de Inventario" as Menu {
+  [*] --> ViendoArmas
+  ViendoArmas --> ViendoConsumibles : cambiarPestaña
+  ViendoConsumibles --> ViendoArmas : cambiarPestaña
+}
+
+ExplorandoMundo --> Menu : presionarTeclaI
+Menu --> ExplorandoMundo : cerrarMenu
+@enduml
