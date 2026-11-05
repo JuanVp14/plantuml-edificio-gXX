@@ -1,0 +1,8 @@
+@startuml
+[*] --> Disponible
+Disponible --> EnProgreso : aceptarMision
+EnProgreso --> Completada : cumplirObjetivos
+EnProgreso --> Fallida : abandonarMision
+Completada --> [*]
+Fallida --> [*]
+@enduml
