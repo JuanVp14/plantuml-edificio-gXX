@@ -1,0 +1,16 @@
+@startuml
+entity Gremio {
+  - id_gremio : INT <<PK>>
+  --
+  nombre : VARCHAR(100)
+  nivel_minimo : INT
+}
+entity Jugador {
+  - id_jugador : INT <<PK>>
+  --
+  nickname : VARCHAR(50)
+  gremio_id : INT <<FK>>
+}
+
+Gremio ||--o{ Jugador
+@enduml
