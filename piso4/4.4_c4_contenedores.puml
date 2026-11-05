@@ -1,0 +1,12 @@
+@startuml
+!include <C4/C4_Container>
+
+Person(admin, "Game Master")
+System_Boundary(rpg, "RPG Manager Web") {
+  Container(app, "Aplicación Web Java", "Tomcat 10, Servlets/JSP")
+  ContainerDb(db, "Base de datos Relacional", "Oracle 11g")
+}
+
+Rel(admin, app, "Gestiona campañas usando", "HTTPS")
+Rel(app, db, "Consulta y actualiza datos usando", "JDBC")
+@enduml
