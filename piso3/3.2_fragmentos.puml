@@ -1,0 +1,14 @@
+@startuml
+actor Jugador
+participant SistemaCombate
+participant Monstruo
+
+loop mientras Monstruo vida > 0
+  Jugador -> SistemaCombate : ejecutarAtaque()
+  alt probabilidad critico > 85
+    SistemaCombate -> Monstruo : aplicarDanio(Critico)
+  else 
+    SistemaCombate -> Monstruo : aplicarDanio(Normal)
+  end
+end
+@enduml
