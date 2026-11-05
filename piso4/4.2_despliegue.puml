@@ -1,0 +1,14 @@
+@startuml
+node "PC del Jugador" {
+  artifact "Cliente Web RPG" as Cliente
+}
+node "Servidor Tomcat 10" {
+  artifact "API de Gestión" as API
+}
+node "Servidor Base de Datos" {
+  database "Oracle 11g RPG" as BD
+}
+
+Cliente --> API : Peticiones HTTPS
+API --> BD : Conexión JDBC
+@enduml
