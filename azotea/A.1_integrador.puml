@@ -1,0 +1,12 @@
+@startuml
+actor GameMaster
+participant GestorEventos
+participant EnemigoJefe
+
+GameMaster -> GestorEventos : iniciarEvento(EnemigoJefe)
+loop fase de jefe
+  GestorEventos -> EnemigoJefe : activarHabilidadEspecial()
+  GestorEventos -> Jugador : recibirAtaqueArea()
+end
+GestorEventos --> GameMaster : eventoFinalizado
+@enduml
