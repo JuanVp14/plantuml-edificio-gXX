@@ -1,0 +1,10 @@
+@startuml
+component "Interfaz Jugador" as UI
+component "Motor de Combate" as Motor
+component "Base de Datos RPG" as BD
+interface "API Combate" as API
+
+UI --> API
+API - Motor
+Motor --> BD
+@enduml
